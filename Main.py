@@ -19,6 +19,6 @@ print(camper_bob.gets_cabin())
 
 counselor_annie = Counselor('Annie', '21', 'Portland', 'Musical Theater')
 print(counselor_annie.responsible_for_cabin())
-print(joi.gets_trip)
+print(joi.gets_trip())
 chloe = Camper('Chloe', 15, 'Los Angeles', 'Horses')
 print(chloe.gets_trip())

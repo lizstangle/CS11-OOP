@@ -22,7 +22,8 @@ class Camper(CampPopulation, Activity):
         trip_duration = 3
       else: 
         trip_duration = 7 
-      return f"Trip duration was changed to {trip_duration} days"   
+      theme = Activity.set_trip_themes(self)
+      return f"Trip duration was changed to {trip_duration} days  || {theme}"   
 
     # composition: campers are composed of activities
     def add_activity(self):
@@ -31,4 +32,4 @@ class Camper(CampPopulation, Activity):
 
     # demonstrates override 
     def greeting(self, name, age, hometown, interest):   
-      return(f"I'm {name} and I'm a camper. I'm {age}, from {hometown} and love {interest}.")  
+      return(f"I'm {name} and I'm a camper. I'm {age}, from {hometown} and love {interest}.")

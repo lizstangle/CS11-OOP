@@ -1,4 +1,5 @@
 from CampPopulation import CampPopulation
+from CampPopulation import CampPopulation
 from random import choice
 class Counselor(CampPopulation):
   def __init__(self, name, age, hometown, interest):

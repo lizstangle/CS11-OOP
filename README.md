@@ -1,1 +1,1 @@
-# CS11-OOP
+# Design classes and instantiate objects using inheritance, overrides and composition.

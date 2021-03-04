@@ -1,3 +1,4 @@
+from Activity import Activity
 class CampPopulation:
     #Class Attributes
     camp_name = "Four Winds"
@@ -11,6 +12,4 @@ class CampPopulation:
         self.interest = interest
 
     def greeting(self, name, age, hometown, interest):   
-        return(f"I'm {name}. I'm {age}, from {hometown} and love {interest}.")
-        
-        
+      return f"I'm {name}. I'm {age}, from {hometown} and love {interest}."

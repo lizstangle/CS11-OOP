@@ -3,7 +3,7 @@ class CampPopulation:
     camp_name = "Four Winds"
     camp_location = "Orcas Island"
 
-    def __init__(self, name, age: int, hometown, interest):
+    def __init__(self, name, age, hometown, interest):
         # public attributes
         self.name = name
         self.age = age
@@ -12,4 +12,5 @@ class CampPopulation:
 
     def greeting(self, name, age, hometown, interest):   
         return(f"I'm {name}. I'm {age}, from {hometown} and love {interest}.")
+        
         

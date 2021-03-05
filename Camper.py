@@ -40,3 +40,6 @@ class Camper(CampPopulation, Activity):
     # demonstrates override 
     def greeting(self): 
       return(f"I'm {self.name} and I'm a camper. I'm {self.age}, from {self.hometown} and love {self.interest}.")
+
+    def add_activity(self, activity_name):
+      self.activities.append(activity_name)  

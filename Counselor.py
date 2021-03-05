@@ -22,10 +22,7 @@ class Counselor(CampPopulation):
   def leads_evening_activities(self, activity):
     play = activity.get_evening_activities()
     self.activities.append(play)
-    return f"Tonight's evening activity will be {play} with Counselor {self.name}."
+    return f"Tonight's evening activity will be {play} with {self.name}."
     # return night_play
 
-        #   def leads_evening_play(self, evening_play):
-#       night_play = activity.get_evening_activities()
-#       self.activities.append(night_play)
-#       return night_play
+    

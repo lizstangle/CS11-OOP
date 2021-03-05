@@ -4,11 +4,6 @@ class Activity:
         self.time = time
         self.location = location
 
-    def show_activities(self):
-        # composition: campers are composed of activities
-        pass   
- 
-
     def get_activities(self):    
       activities_arr = ["sailing", "swimming", "gardening", "riding", "playing soccer"]
       activity = choice(activities_arr)

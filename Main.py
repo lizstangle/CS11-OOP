@@ -10,19 +10,15 @@ alec = Counselor("Alec", 19, "Bay Area", "Running")
 isabel = Camper("Isabel", 9, "Seattle", "swimming")
 annie = Counselor("Annie", 21, "Portland", "Musical Theater")
 
-# instantiated rotation class
-rotation = Rotation()
-# the dot is the instance and calling a s
-# pecific method within that instance. (left side instance and right side is part of hte class)
-rotation.populate_activities()
 
+rot = Rotation()
 # call random rotation function and pass info to the camper
-random = rotation.get_activities()
-chloe.add_activity(random)
+rand = rot.get_activities()
+chloe.add_activity(rand)
 
 
-# print(chloe.greeting())
-# print(alec.greeting())
+print(chloe.greeting())
+print(alec.greeting())
 print(chloe.gets_cabin())
 print(chloe.gets_trip())
 

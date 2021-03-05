@@ -14,7 +14,7 @@ class Activity:
       activity = choice(activities_arr)
       return activity
 
-    def set_evening_activities(self):
+    def get_evening_activities(self):
       evening_play_arr = ["evening_fires", "skits", "singing", "capture_the_chicken"]
       evening_play = choice(evening_play_arr)
       return evening_play

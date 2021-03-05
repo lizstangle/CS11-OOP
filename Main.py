@@ -16,8 +16,8 @@ alec = Counselor("Alec", 19, "Bay Area", "Running")
 act = Activity("2pm", "camp") 
 print(chloe.add_activity(act))
 print(alec.responsible_for_cabin())
-act = Activity("7pm", "Greenie Hill")
-print(alec.leads_evening_activities())
+act = Activity("4pm", "greeny hill")
+print(alec.leads_evening_activities(act))
 
 # lacrosse = Activity("afternoon", " Noon", "field")
 

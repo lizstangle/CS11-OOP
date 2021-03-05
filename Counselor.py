@@ -1,6 +1,7 @@
 from CampPopulation import CampPopulation
 from Activity import Activity
 from random import choice
+
 class Counselor(CampPopulation):
   def __init__(self, name, age, hometown, interest):
     super().__init__(name, age, hometown, interest) 

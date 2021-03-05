@@ -1,6 +1,7 @@
 from CampPopulation import CampPopulation
 from Activity import Activity
 from random import choice
+from Rotation import Rotation
 
 class Camper(CampPopulation, Activity):
     def __init__(self, name, age, hometown, interest):
@@ -32,14 +33,13 @@ class Camper(CampPopulation, Activity):
 
     # composition: campers are composed of activities which is composition from the Actities class. 
     def add_activity(self, activity):
-      play = activity.get_activities()
-      self.activities.append(play)
-      return f'{self.name}\'s activity today is {play}'
+    #   play = activity.get_activities()
+      self.activities.append(activity)
+      print(f'{self.name}\'s activity today is {activity.get_title()}')
 
 
     # demonstrates override 
     def greeting(self): 
       return(f"I'm {self.name} and I'm a camper. I'm {self.age}, from {self.hometown} and love {self.interest}.")
 
-    def add_activity(self, activity_name):
-      self.activities.append(activity_name)  
+   

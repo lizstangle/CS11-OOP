@@ -19,8 +19,8 @@ class Counselor(CampPopulation):
     cabin = choice(cabin_arr)
     return cabin
     
-  def leads_evening_activities(self, activity):
-    play = activity.get_evening_activities()
+  def leads_evening_activities(self, rotation):
+    play = rotation.get_evening_activities()
     self.activities.append(play)
     return f"Tonight's evening activity will be {play} with {self.name}."
     # return night_play

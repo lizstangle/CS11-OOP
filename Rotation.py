@@ -15,7 +15,7 @@ class Rotation:
         # activity = Activity("kickball", "10 am", "field")
         # activity = Activity("adventuretime", "10 am", "field")
         # activity = Activity("paddleboarding", "2 pm", "dock")
-        # activity = Activity("extreme-canoe", "10 pm", "dock")
+        # activity = Activity("extreme-canoe", "10 am", "dock")
         # activity = Activity("kayaking", "10 am", "dock")
         # activity = Activity("sailing", "2 pm", "dock")
         # activity = Activity("sail-racing", "10 am", "dock")

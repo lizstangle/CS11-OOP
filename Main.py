@@ -21,8 +21,8 @@ random = rotation.get_activities()
 chloe.add_activity(random)
 
 
-print(chloe.greeting())
-print(alec.greeting())
+# print(chloe.greeting())
+# print(alec.greeting())
 print(chloe.gets_cabin())
 print(chloe.gets_trip())
 

@@ -9,27 +9,34 @@ class Camper(CampPopulation, Activity):
       self.activities = []
     
     def gets_cabin(self):
-      # Here I create the array that assigns names of cabins
-      cabin_name_arr = ["Romany Winds", "Wandervogel", "Juniper", "Top Gallant", "Moonraker", "Top Sail"]
+      # Here I create the array that assigns a cabin
+      cabin_arr = ["Romany Winds", "Wandervogel", "Juniper", "Top Gallant", "Moonraker", "Top Sail"]
       # Random cabin assignment by using "choice"
-      assign_random_cabin = choice(cabin_name_arr)
-      assigned_cabin = assign_random_cabin     
-      cabin = assigned_cabin
-      return f"{self.name} has been assigned to cabin: {cabin}"
+      cabin = choice(cabin_arr)
+      
+      return f"{self.name} is in the {cabin} cabin."
 
+# must use self.tripduration because it is an instance variable
     def gets_trip(self, trip_duration=0):
       if self.age <= 12:
-        trip_duration = 3
+        self.trip_duration = 3
       else: 
-        trip_duration = 7 
-      theme = Activity.set_trip_themes(self)
-      return f"Trip duration was changed to {trip_duration} days  || {theme}"   
+        self.trip_duration = 7 
 
-    # composition: campers are composed of activities
-    def add_activity(self):
-      func_call = Activity.get_activities()
-      return func_call
+
+    # def set_trip_themes(self):
+      trip_themes_arr = ["canoeing", "kayaking", "hiking"]
+      trip_theme = choice(trip_themes_arr)  
+
+      return f"Going on a {trip_theme} trip for {self.trip_duration} days is an adventure of a lifetime."
+
+    # composition: campers are composed of activities which is composition from the Actities class. 
+    def add_activity(self, activity):
+      play = activity.get_activities()
+      self.activities.append(play)
+      return f'{self.name}\'s activity today is {play}'
+
 
     # demonstrates override 
-    def greeting(self, name, age, hometown, interest):   
-      return(f"I'm {name} and I'm a camper. I'm {age}, from {hometown} and love {interest}.")
+    def greeting(self): 
+      return(f"I'm {self.name} and I'm a camper. I'm {self.age}, from {self.hometown} and love {self.interest}.")

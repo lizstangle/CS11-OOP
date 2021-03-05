@@ -1,5 +1,5 @@
 from CampPopulation import CampPopulation
-from CampPopulation import CampPopulation
+from Activity import Activity
 from random import choice
 class Counselor(CampPopulation):
   def __init__(self, name, age, hometown, interest):
@@ -8,18 +8,22 @@ class Counselor(CampPopulation):
     self.activities = []
     self.camp_duration = 0
 
-  def greeting(self, name, age, hometown, interest):   
-    return f"I'm {name}. I'm {age}, from {hometown} and love {interest}."
+  #This greeting overrides the greeting in CampPolulation.py 
+  def greeting(self):   
+    return f"I'm counselor {self.name}. I'm {self.age}, from {self.hometown} and love {self.interest}."
 
   def responsible_for_cabin(self):
      # Here I create the array that assigns names of cabins
-    cabin_name_arr = ["Romany Winds", "Wandervogel", "Juniper", "Top Gallant", "Moonraker", "Top Sail"]
+    cabin_arr = ["Romany Winds", "Wandervogel", "Juniper", "Top Gallant", "Moonraker", "Top Sail"]
       # Random cabin assignment by using "choice"
-    assign_random_cabin = choice(cabin_name_arr)
-    assigned_cabin = assign_random_cabin     
-    cabin = assigned_cabin
-    
-    return f"I am Counselor {self.name} I am in charge of {cabin}"
+    cabin = choice(cabin_arr)
+    return cabin
+  def leads_evening_activities(self, activity):
+    night_play = activity.set_evening_activities()
+    self.activities.append(night_play)
+    return night_play
 
-  def leads_activities():
-    pass
+        #   def leads_evening_play(self, evening_play):
+#       night_play = activity.get_evening_activities()
+#       self.activities.append(night_play)
+#       return night_play

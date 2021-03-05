@@ -13,3 +13,4 @@ class CampPopulation:
 
     def greeting(self, name, age, hometown, interest):   
       return f"I'm {name}. I'm {age}, from {hometown} and love {interest}."
+  

@@ -21,7 +21,8 @@ class Activity:
     def get_title(self):
         return self.rotation_name
 
-    
-    #   return f"Nights are magical at camp. {evening_play} by the stars, in crisp ocean air leads to the sweetest sleep ever."
-    
-    #   return f"Campers go on overnight {trip_theme} trips where they learn valuable wilderness skills and have a blast."
+    def set_title(self, title):
+        self.title = title    
+
+    def __repr__(self):
+        return f"Do {self.rotation_name} at {self.time} in {self.location}"

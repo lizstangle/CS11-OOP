@@ -21,23 +21,22 @@ random = rotation.get_activities()
 chloe.add_activity(random)
 
 
-# print(chloe.greeting())
-# print(alec.greeting())
-# print(chloe.gets_cabin())
-# print(chloe.gets_trip())
+print(chloe.greeting())
+print(alec.greeting())
+print(chloe.gets_cabin())
+print(chloe.gets_trip())
 
-# act = Activity("2pm", "camp") 
-# print(chloe.add_activity(act))
+badminton = Activity("badminton", "10 am", "field") 
 
-# print(alec.responsible_for_cabin())
-# print(alec.leads_evening_activities(act))
+print(alec.responsible_for_cabin())
+# print(alec.leads_evening_activities(badminton))
 
-# pickleball = Activity("3pm" "pickleball courts")
-# chloe.add_activity("twizzly bob")
-# chloe.add_activity("pickleball")
-# chloe.add_activity("arts and crafts")
-# print(chloe.activities)
+twizzly_bop = Activity("twizzly bop", "10 am", "dock")
 
-# print(annie.responsible_for_cabin())
-# print(chloe.greeting())
-# print(chloe.gets_trip())
+print(chloe.activities)
+
+print(annie.responsible_for_cabin())
+print(chloe.greeting())
+print(chloe.gets_trip())
+rot = Rotation()
+rot.print_all_activities()

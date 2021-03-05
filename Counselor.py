@@ -7,7 +7,6 @@ class Counselor(CampPopulation):
     super().__init__(name, age, hometown, interest) 
     self.cabin = None
     self.activities = []
-    self.camp_duration = 0
 
   #This greeting overrides the greeting in CampPolulation.py 
   def greeting(self):   

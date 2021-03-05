@@ -1,7 +1,7 @@
 from CampPopulation import CampPopulation
 from Activity import Activity
 from random import choice
-from Rotation import Rotation
+# from Rotation import Rotation
 
 class Camper(CampPopulation, Activity):
     def __init__(self, name, age, hometown, interest):
